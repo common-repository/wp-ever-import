@@ -1,0 +1,285 @@
+
+.imp-nav-tab-wrapper.nav-tab-wrapper a.nav-tab {
+  padding: 10px 30px;
+  min-width: 150px;
+  text-align: center;
+}
+
+.imp-nav-tab {
+  padding-top: 20px;
+}
+
+
+div#imp-data-table {
+  overflow-x: auto
+}
+
+div#tab1.imp-nav-tab div#imp-data-panel {
+  padding-left: 250px;
+  position: relative;
+
+}
+
+form#imp-file-upload-form {
+  padding-bottom: 20px;
+}
+form#imp-file-upload-form * {
+  font-size: 16px
+}
+
+
+div#imp-data-navigator {
+  border-top: #d3d3d3 1px solid;
+  width: 250px;
+  position: absolute;
+  left: 0;
+  max-height: 400px;
+  font-size: 12px;
+  overflow: scroll;
+  border-bottom: #d3d3d3 1px solid;
+  min-height: 498px;
+}
+
+div#imp-data-navigator ul > li {
+  background-color: #fff;
+  margin: 0;
+  padding: 12px 4px;
+  border-bottom: #eee 4px solid;
+  cursor: pointer;
+  font-size: 14px
+}
+
+div#imp-data-navigator ul > li.imp-nav-hint {
+  font-weight: bold;
+}
+
+div#imp-data-navigator ul > li.imp-nav-selected {
+  background-color: #f4f4f4;
+}
+
+.clearboth {
+	clear:both;
+}
+
+div#imp-post-fields-handle {
+  text-align: center;
+
+}
+div#imp-post-fields-handle h3 {
+  text-shadow: 0 0 1px #fff;
+}
+div#imp-post-fields {
+  border-radius: 12px;
+  border: 2px #ccc solid;
+  box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.4), 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+div#imp-post-fields {
+  background-color: #fff;
+  display: inline-block;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 99999;
+  
+  padding: 10px;
+  
+  max-height: 300px;
+  width: auto !important;
+  height: auto !important;
+    
+}
+div#imp-post-fields-handle {
+  padding: 1px 10px;
+  background-color:#ccc;
+  margin: -10px -10px 0;
+  cursor: move;
+
+}
+
+div#imp-fields-tree {
+  max-height: 260px;
+  overflow: auto;
+
+}
+
+div#imp-fields-tree ul > li {
+  
+  display: block;  
+  padding: 3px;
+  border-radius: 8px;
+  border: 1px #fff solid;
+    
+}
+
+div#imp-fields-tree ul > li:hover {
+  border:1px #ccc solid;
+  background-color:#ccc;
+  box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.4), 1px 1px 1px rgba(0,0,0,0.4);
+  cursor: move;
+  text-align: center;
+  position: relative;
+}
+
+div.imp-text-field-replacer {
+  background-color: #f4f4f4;
+  min-height: 40px;
+  border: 1px #ccc solid;
+}
+
+span.imp-mapped-field {
+  background-color: #ccc;
+  padding: 1px 20px;
+  margin: 0 5px;
+  position: relative;
+  cursor: move;
+  line-height: 24px;
+  border-radius: 12px;
+  border: 2px #ccc solid;
+  box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.4), 1px 1px 1px rgba(0,0,0,0.4);
+  color: #fff;
+  text-shadow: 0 0  1px #000;
+  font-size: 16px;
+  display: inline-block;
+}
+
+i.imp-mapped-field-options,
+i.imp-mapped-field-delete {
+  display: block;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top:0px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color:#aaa;
+  box-shadow: inset 1px 1px  1px rgba(0,0,0,0.4);
+
+}
+i.imp-mapped-field-delete {
+  right:0px;
+}
+i.imp-mapped-field-options {
+  left:0px;
+}
+i.imp-mapped-field-delete:hover,
+i.imp-mapped-field-options:hover {
+    text-shadow: none;
+}
+i.imp-mapped-field-delete:before,
+i.imp-mapped-field-options:before  {
+  font-size: 16px;
+  width: 16px;
+
+}
+i.imp-mapped-field-options:before {
+  font-size: 14px;
+  margin-top: 1px;
+}
+
+
+div#imp-mapped-field-options-panel {
+    position: absolute;
+    z-index: 99999;
+    display: block;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 10px;
+    top: 30px;
+    left: 0;
+  background-color:#f4f4f4;
+border-radius: 12px;
+  border: 1px #eee solid;
+  box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.4), 1px 1px 3px rgba(0,0,0,0.4);
+  color: #333;
+  text-shadow: none;
+  font-size: 14px;
+  cursor: default;
+}
+
+div#imp-post-panel input[type="text"],
+div#imp-post-panel textarea,
+div#imp-post-panel button,
+div#imp-post-panel a.button,
+div#imp-post-panel input[type="button"],
+div#imp-post-panel div[data-forinput="newtag[post_tag]"],
+div#imp-post-panel a#link-post_tag,
+div#imp-post-panel ul#category-tabs,
+div#imp-post-panel div#minor-publishing-actions,
+div#imp-post-panel div#major-publishing-actions,
+div#imp-post-panel table#post-status-info {
+  display: none;
+}
+
+div#titlewrap:before {
+  content: 'Title'
+}
+
+div#wp-content-editor-container,
+div#titlewrap {
+  padding: 14px !important;
+  background-color:#fff;
+}
+div#wp-content-editor-container:before {
+  content: 'Content';
+}
+div#wp-content-editor-container div.imp-text-field-replacer {
+  min-height: 200px;
+}
+
+
+div#imp-mapped-field-options-panel input {
+  width: auto;
+  margin: auto;
+}
+
+div#imp-mapped-field-options-panel input[type="text"] {
+  display: inline-block !important;
+}
+
+
+div#submitdiv > button,
+div#submitdiv > h2,
+div.submitbox > div#minor-publishing, 
+div.submitbox > div#major-publishing-actions div#delete-action,
+div.submitbox > div#major-publishing-actions div#delete-action {
+  display: none;
+}
+
+div#imp-post-section div#submitdiv > button,
+div#imp-post-section div#submitdiv > h2,
+div#imp-post-section div.submitbox > div#minor-publishing, 
+div#imp-post-section div.submitbox > div#major-publishing-actions div#delete-action,
+div#imp-post-section div.submitbox > div#major-publishing-actions div#delete-action {
+  display: inherit;
+}
+
+div#imp-post-section div#submitdiv {
+  display: none;
+}
+
+div#major-publishing-actions:before {
+  content: 'Save this import for re-using later';
+  line-height: 28px;
+}
+
+div#imp-post-section div#major-publishing-actions:before {
+  content: none;
+  line-height: inherit;
+}
+
+div#poststuff div#postbox-container-1 {
+  height: 100px;
+}
+
+div#poststuff div#postbox-container-2 {
+  display: none;
+}
+
+div#imp-post-section div#postbox-container-2 {
+  display: inherit;
+}
+
+#titlediv #title-prompt-text {
+  padding-top: 28px;
+}
